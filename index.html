@@ -1,110 +1,96 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Developer Ben</title>
 
-	<link rel="shortcut icon" href="img/favicon.ico"> 
-	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Ben the Developer</title>
+	<!-- Included Bootstrap CSS Files -->
+	<link rel="stylesheet" href="./js/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./js/bootstrap/css/bootstrap-responsive.min.css" />
 
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Css -->	
+	<link rel="stylesheet" href="./css/style.css" />
+
+	<style>
+.shakeimage{
+position:relative
+}
+</style>
+<script language="JavaScript1.2">
+
+/*
+Shake image script (onMouseover)- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+//configure shake degree (where larger # equals greater shake)
+var rector=3
+
+///////DONE EDITTING///////////
+var stopit=0 
+var a=1
+
+function init(which){
+stopit=0
+shake=which
+shake.style.left=0
+shake.style.top=0
+}
+
+function rattleimage(){
+if ((!document.all&&!document.getElementById)||stopit==1)
+return
+if (a==1){
+shake.style.top=parseInt(shake.style.top)+rector+"px"
+}
+else if (a==2){
+shake.style.left=parseInt(shake.style.left)+rector+"px"
+}
+else if (a==3){
+shake.style.top=parseInt(shake.style.top)-rector+"px"
+}
+else{
+shake.style.left=parseInt(shake.style.left)-rector+"px"
+}
+if (a<4)
+a++
+else
+a=1
+setTimeout("rattleimage()",50)
+}
+
+function stoprattle(which){
+stopit=1
+which.style.left=0
+which.style.top=0
+}
+
+</script>
 </head>
 <body>
+	<!-- main body -->
+<header>
+	<div>
+		<img src ="img/monitor.png" class = "monitor">
 
+		<a href="tablet.html"><img src="img/profile.png" onmouseover="this.src='img/profile2.png'" onmouseout="this.src='img/profile.png'" class="pic" alt="tablet.html"></a>
+		<img src ="img/tablet.png" class = "tablet">
 
-	<header>
-
-		<div id="logo-container">
-			<div id="logo"><a href="/">Benjamin Lew</a></div>
-			<div id="subtitle">the developer</div>
-		</div>
-<!-- 		<nav>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li> 
-				<li><a href="mailto:your@address.com" class="bordered">Contact</a></li>
-			</ul>
-		</nav> -->
-
-	</header>
-
-	<div id="content">
-
-		<section class="intro">
-			<h1>A developer home grown from the Bay Area</h1>
-			<p>
-				I am a font end developer with some experience in back ground languages. As I began to learn to code, I saw how much fun it was to create the ideas I had. I really enjoyed programming different products as well as increasing my skills and new languages that I could learn. <br>
-
-				<br>
-				I feel that I am a forever student. Always learning new things, expanding myself. Improving myself with new things that I have learned. Growing up in the bay, I have been exposed to a variety of different languages, both computer based and others, which has helped fuel my passion in learning and programming. 
-			</p>
-		</section>
-
-		<section class="row">
-			<div class="col-full">
-				<h2>Current Projects</h2>
-				<p>
-					These are some of the current projects that I am working on.
-				</p>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="photo-grid">
-				<a href="img/game.jpg" rel="lightbox" class="col-2"><img src="img/game.jpg" alt="Example photo"></a>
-
-				<a href="img/uchiwa.jpg" rel="lightbox" class="col-2"><img src="img/uchiwa.jpg" alt="Example photo"></a>
-
-				<a href="img/giftvibe.jpg" rel="lightbox" class="col-1"><img src="img/giftvibe.jpg" alt="Example photo"></a>
-
-			</div>
-		</section>
-
-
-		<section class="row">
-			<div class="col">
-				<h2>Contact</h2>
-				<p>
-					Get in  <a href="bennru33@gmail.com">touch!</a>
-				</p>
-			</div>
-			<div class="col">
-				<h2>Connect with me</h2>
-				<p>
-					 <a href="http://github.com/benlew3">Github</a>, 
-					 <a href="http://www.linkedin.com/in/benjaminlew">LinkedIn</a>
-				</p>
-			</div>
-		</section>
- 
+		<img src="img/phone.png" class="shakeimage phone" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
 	</div>
+</header>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script>
-	if (!window.jQuery) 
-	{
-	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
-	}
-	</script>
-
-	<script src="js/vendor/jquery.fluidbox.min.js"></script>
-	<script src="js/main.js"></script>
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/jquery-validate/assets/js/jquery.validate.min.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 </html>
-
