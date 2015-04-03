@@ -1,0 +1,81 @@
+/*header*/
+body{
+	margin: 0px;
+}
+header{
+	background-color: #4C4238;
+	height:110px;
+}
+div#logo{
+	float: left;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+nav{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+nav ul{
+	position: relative;
+	float: right;
+	padding-top: 25px;
+	padding-right:10px;
+}
+nav li{
+	display: inline;}
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+	letter-spacing: 3px;
+	margin: 10px;
+}
+nav li a:hover {
+	text-decoration: underline;
+ }
+
+/*body*/
+body{
+	background-color: #383838;
+}
+.mainbody{
+	background-image: url("../img/the_bar.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+p#one{
+	font-size: 40px;
+	display: inline;
+	color:white;
+	position: relative;
+	left: 15px;
+	top: 20px;
+	background-color: rgba(000,000,000,.3);
+	font-family: 'PT Sans Narrow', sans-serif;
+	border-radius: 5px;
+	padding: 5px 15px;
+}
+p#two{
+	font-size: 24px;
+	display: inline;
+	color: #A00000;
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: rgba(000,000,000,.3);
+	position: relative;
+	left: 505px;
+	top: 500px;
+	border-radius: 5px;
+	padding: 5px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

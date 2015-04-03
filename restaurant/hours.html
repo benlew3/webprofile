@@ -1,0 +1,52 @@
+<!document html>
+<html>
+	<head>
+		<!--change name when needed-->
+		<title>Uchiwa Restaurant</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/hours.css">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(37.971749, -122.529879),
+          zoom: 600,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	</head>
+	<body>
+		<header>
+			<div>
+				<div id="logo">
+					<img src="img/logo.png">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home  </a></li>
+
+						<li><a href="menu.html"> Menu  </a></li>
+
+						<li><a href="about_us.html"> About Us </a></li>
+
+						<li><a href="hours.html"> Hours & Location  </a></li>
+						
+						<li><a href="social_media.html"> Social Media</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<h1>Hours and Location</h1>
+		<div id="map-canvas">
+		</div>
+		<p>821 B Street</p>
+		<p>San Rafael, Ca 94901</p>
+		<p>Phone: (415)524-2727</p>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+/*header*/
+body{
+	margin: 0px;
+}
+header{
+	background-color: #4C4238;
+	height:110px;
+}
+div#logo{
+	float: left;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+nav{
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+nav ul{
+	position: relative;
+	float: right;
+	padding-top: 25px;
+	padding-right:10px;
+}
+nav li{
+	display: inline;}
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+	letter-spacing: 3px;
+	margin: 10px;
+}
+nav li a:hover {
+	text-decoration: underline;
+ }
