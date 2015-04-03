@@ -24,16 +24,9 @@ position:relative
 </style>
 <script language="JavaScript1.2">
 
-/*
-Shake image script (onMouseover)- 
-© Dynamic Drive (www.dynamicdrive.com)
-For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
-*/
-
 //configure shake degree (where larger # equals greater shake)
 var rector=3
 
-///////DONE EDITTING///////////
 var stopit=0 
 var a=1
 
@@ -78,11 +71,13 @@ which.style.top=0
 	<!-- main body -->
 <header>
 	<div>
-		<img src ="img/monitor.png" class = "monitor">
+		<img src ="img/monitor.png" class = "monitor" alt="monitor">
+		<img src="img/test1.png" class="desktop" alt="wallpaper">
 
-		<a href="tablet.html"><img src="img/profile.png" onmouseover="this.src='img/profile2.png'" onmouseout="this.src='img/profile.png'" class="pic" alt="tablet.html"></a>
-		<img src ="img/tablet.png" class = "tablet">
+		<a href="tablet.html"><img src="img/profile.png" onmouseover="this.src='img/profile2.png'" onmouseout="this.src='img/profile.png'" class="pic" alt="tablet"></a>
+		<img src ="img/tablet.png" class = "tablet" alt="profile picture">
 
+		<img src="img/telephone.jpg" class="message" alt="telephone">
 		<img src="img/phone.png" class="shakeimage phone" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
 	</div>
 </header>

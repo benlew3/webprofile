@@ -1,16 +1,11 @@
 body {
-	background: transparent url(../img/bg.jpg) center center fixed;
+	background-color: #CCCCCC;
 	color: #EEEEEE;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-a.link :hover {
-    background-image: url('img/bg.jpg');
-    z-index: 3;
-}
-
 
 h1 {
 	font-family: 'Titillium Web', sans-serif;
@@ -35,17 +30,6 @@ input {
 	text-shadow: none;
 }
 
- @media (max-width: 767px) {
- 	h1 {
- 		font-size: 24px;
- 	}
- }
-
- @media (max-width: 320px) {
- 	h1 {
- 		font-size: 18px;
- 	}
- }
 
 /* RESPONSIVE CSS HACKS
 -------------------------------------------------- */
@@ -88,8 +72,28 @@ input {
 		display: inline;
 		border-radius: 10px;
 	}
+
+	.message{
+		width: 12.5%;
+		position: absolute;
+		margin-top: 26.5%;
+		margin-left: 11.5%;
+	}
+	.desktop{
+		position: absolute;
+		width: 63%;
+		margin-left: 18.5%;
+		margin-top: 5%;
+		border-radius: 1%
+	}
 	/*tablet page*/
 
+	.main{
+		position: relative;
+		margin-top: 20%;
+		width: 10%;
+		margin-left: 1%;
+	}
 	.tablet-page{
 		width: 96%;
 		position: absolute;
@@ -105,10 +109,6 @@ input {
 		width: 59%;
 		z-index: 1;
 		border-radius: 10px;
-	}
-	.main{
-		text-align: center;
-		color: black;
 	}
 }
 
