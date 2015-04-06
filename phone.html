@@ -20,55 +20,46 @@
 </head>
 <body>
 <header>
-	
-	
-</header>
+<a href="index.html"><img src="img/tablet/arrow.png" class="arrow2"></a>
+	<img src="img/phone-page.png" class="phone2">
+	<div id="contactwrap">
+		<div class="container">
+			<div class="row">
 
-<div id="socials-bar">
-	<a href="#" title="facebook page"><img src="./img/socials/32/facebook.png" alt="facebook page"></a>
-	<a href="#" title="twitter page"><img src="./img/socials/32/twitter.png" alt="twitter page"></a>
-	<a href="#" title="google plus page"><img src="./img/socials/32/google+.png" alt="google plus page"></a>
-	<a href="#" title="linkedin page"><img src="./img/socials/32/linkedin.png" alt="linkedin page"></a>
-	<a href="#" title="youtube page"><img src="./img/socials/32/youtube.png" alt="youtube page"></a>
-	<a href="#" title="flick page"><img src="./img/socials/32/flickr.png" alt="flickr page"></a>
-</div>
+				<div class="col-lg-6">
 
-<div class="background theme">
-	<div class="container">
-		<div class="row center vspace30">
-			<div class="col-md-12">
-				<h1><span>Soon online with our best offers</span></h1>
-				<p>please contact us if you want to discover more on our product</p>
-			</div>
-		</div>
+					<p><font size="4.5"> DON'T BE SHY, GET IN TOUCH!</font></p>
+					<p>Call, Text, Email, Mail, Anyway works! <br>I look forward to working with you!</p>
+					<p>
+						<small>Tel. 415.497.2162<br/>
+						Email. bennru322Gmail.com<br/></small>
+					</p>
+					<p>
+						<small>Address. 15 Elderberry Ct.<br/>
+						Novato, Ca, 94945<br/>
+						USA</small>
+					</p>
 
-		<div class="row vspace30">
-			<div class="col-md-12 service center">
-				<div id="ContactFormContainer">
-					<form id="ContactForm" class="form" method="post" role="form">
-						<div class="form-group">
-							<input id="ContactSubject" name="ContactSubject" type="text" placeholder="Subject" class="form-control" />
-						</div>
-						<div class="form-group">
-							<input id="ContactEmail" name="ContactEmail" type="text" placeholder="Email" class="form-control" />
-						</div>
-						<div class="form-group">
-							<textarea id="ContactMessage" name="ContactMessage" placeholder="Message" class="form-control" rows="10"></textarea>
-						</div>
-						<div class="form-group">
-							<button id="send" class="btn-large btn btn-inverse btn-block">SEND</button>
-						</div>
-					</form>
 				</div>
-			</div>
-		</div>
+</div>
+				<div class="col-lg-4 boxes">
+					<form role="form" method="post" action="mail.php">
+					  <div class="form-group">
+					    <label for="name">Your Name</label>
+					    <input required name="contactname" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
+					    <label for="email">Email address</label>
+					    <input required name="contactemail" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+					    <label for="message">Message</label>
+					    <textarea required name ="contactmessage" class="form-control" rows="3"></textarea>
+					  </div>
+					  <button name="submit" type="submit" class="btn btn-default">Submit</button>
+					</form>
 
-		<div class="row center vspace30">
-			<i>&copy;&nbsp;copyright 2014 your company</i>
-		</div>
-	</div>
-</div>	
+				</div>
+			
+			</div>	
 
+</header>
 
 <script src="./js/jquery-2.1.1.min.js"></script>
 <script src="./js/bootstrap/js/bootstrap.min.js"></script>

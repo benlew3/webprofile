@@ -88,27 +88,57 @@ input {
 	}
 	/*tablet page*/
 
-	.main{
-		position: relative;
-		margin-top: 20%;
-		width: 10%;
+	.arrow1{
+		position: absolute;
+		margin-top: 25%;
+		width: 60px;
 		margin-left: 1%;
 	}
 	.tablet-page{
-		width: 96%;
+		width: 150%;
 		position: absolute;
-		padding-left: 15%;
+		padding-left: 0;
 		padding-right: 10%;
 		z-index: 0;
 		display: inline;
 	}
+	
 	#carousel{
 		position: absolute;
+		margin-top: 6.8%;
 		margin-left: 21%;
-		margin-top: 6.5%;
-		width: 59%;
+		margin-right: 32%;
 		z-index: 1;
 		border-radius: 10px;
+	}
+	.sliders{
+		width: 100%;
+	}
+
+	/*phone page*/
+	.phone2{
+		width: 38%;
+		position: absolute;
+		margin-left: 30%;
+		z-index: 1;
+	}
+	#contactwrap{
+		text-align: center;
+		color:black;
+		margin-left: 27%;
+		padding-top: 12.5%;	
+		margin-right: 0 auto;
+		z-index: 2;
+
+	}
+	.boxes{
+		margin-left: 7.5%;
+	}
+	.arrow2{
+		position: absolute;
+		margin-top: 25%;
+		width: 60px;
+		margin-left: 1%;
 	}
 }
 
