@@ -7,6 +7,125 @@ body {
 	background-size: cover;
 }
 
+.header{
+	background-color: #444;
+}
+
+.name{
+	font-size: 50px;
+	margin-left: 7%;
+	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: white;
+}
+.title{
+	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+	margin-left: 7%;
+	margin-top: 0;
+	color: white;
+	margin-bottom: 0;
+}
+
+.resumelink{
+	margin-top: -50px;
+	float: right;
+	margin-right: 2%;
+	font-size: 20px;
+	color: white;
+	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+/*resume information*/
+.resume{
+	background-color: white;
+}
+.me{
+	font-family: Georgia;
+	font-size: 54px;
+	color: black;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin-left: 17%;
+	margin-bottom: 0;
+}
+
+.main{
+	font-family: Georgia;
+	font-size: 24px;
+	color: black;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin-left: 18%;
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+.experience{
+	font-family: Georgia;
+	font-size: 20px;
+	color: black;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin-left: 20%;
+	margin-bottom: 0;
+}
+
+.info{
+	font-family: Georgia;
+	font-size: 13px;
+	color: black;
+	font-variant: small-caps;
+	margin-left: 23%;
+	margin-bottom: 0;
+	margin-right: 30%;
+}
+
+.mytitle{
+	font-family: Georgia;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-left: 23%;
+	margin-bottom: 0;
+	margin-right: 30%;
+}
+
+.dates{
+	font-family: Georgia;
+	font-size: 13px;
+	color: black;
+	font-variant: small-caps;
+	margin-bottom: 0;
+	float: right;
+	margin-right: 16.5%;
+	text-align: right;
+	margin-top: -3%;
+}
+
+.education{
+	font-family: Georgia;
+	font-size: 13px;
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-left: 25%;
+	margin-bottom: 0;
+	margin-right: 30%;
+}
+
+.education2{
+	font-family: Georgia;
+	font-size: 13px;
+	color: black;
+	font-variant: small-caps;
+	margin-left: 26%;
+	margin-bottom: 0;
+	margin-right: 30%;
+}
+
+/*end of resume*/
+
 h1 {
 	font-family: 'Titillium Web', sans-serif;
 }
@@ -24,20 +143,16 @@ input {
 	text-shadow: none;
 }
 
-.description {
-	font-family:'PT Sans', Helvetica, Arial, sans-serif;
-	margin-bottom:40px;
-	text-shadow: none;
-}
 
 
 /* RESPONSIVE CSS HACKS
 -------------------------------------------------- */
-@media (max-width: 2000px) {
+@media (max-width: 3000px) {
 	.navbar {
 		margin-bottom: 0;
 	}
 	/*main page*/
+
 	.monitor{
 		width: 100%;
 		position: absolute;
@@ -86,6 +201,18 @@ input {
 		margin-top: 5%;
 		border-radius: 1%
 	}
+	.right{
+		position: absolute;
+		margin-left: 82%;
+		margin-top: 5%;
+		width: 15%;
+	}
+	.left{
+		position: absolute;
+		margin-left: 9%;
+		margin-top: 5%;
+		width: 15%;
+	}
 	/*tablet page*/
 
 	.arrow1{
@@ -95,9 +222,9 @@ input {
 		margin-left: 1%;
 	}
 	.tablet-page{
-		width: 150%;
+		width: 95%;
 		position: absolute;
-		padding-left: 0;
+		padding-left: 15%;
 		padding-right: 10%;
 		z-index: 0;
 		display: inline;
@@ -105,43 +232,46 @@ input {
 	
 	#carousel{
 		position: absolute;
+		width: 58%;
+		height: auto;
 		margin-top: 6.8%;
 		margin-left: 21%;
 		margin-right: 32%;
 		z-index: 1;
 		border-radius: 10px;
 	}
-	.sliders{
-		width: 100%;
-	}
+
 
 	/*phone page*/
-	.phone2{
-		width: 38%;
-		position: absolute;
-		margin-left: 30%;
-		z-index: 1;
+	.contain {
+		width:40%;
+		margin: 0 auto;
+	    background: url("../img/phone-page.png");
+	    background-size: 500px 875px;
+	    background-repeat: no-repeat;
+	    height:1000px;
+}
+	.background{
+		background-color: #444;
 	}
-	#contactwrap{
-		text-align: center;
-		color:black;
-		margin-left: 27%;
-		padding-top: 12.5%;	
-		margin-right: 0 auto;
-		z-index: 2;
 
+	.phone1 {
+		 width: 59%;
+		 z-index: 1;
+		 margin:0 auto;
+		 padding-top:155px;
+		 color: white;
 	}
-	.boxes{
-		margin-left: 7.5%;
-	}
+
 	.arrow2{
 		position: absolute;
 		margin-top: 25%;
 		width: 60px;
-		margin-left: 1%;
+		margin-left: -90%;
+		z-index: 30;
 	}
 }
-
+/*
 @media (max-width: 1100px) {
 	body {
 		padding: 0;
@@ -206,42 +336,195 @@ input {
 	.theme h1 {
 		font-size: 30px;
 	}
-}
+}*/
+@media (max-width: 1050px) {
+	.navbar {
+		margin-bottom: 0;
+	}
+	/*main page*/
 
-@media (max-width: 500px) {
-.monitor{
+	.monitor{
 		width: 100%;
-		position: relative;
-		padding-left: 10%;
-		padding-right: 15%;
-		z-index: -1;
-	}
-	.tablet{
-		width: 80%;
-		position: relative;
-		padding-left: 10%;
-		padding-right: 15%;
-		z-index: 1;
-		margin-left: 7%;
-		margin-top: 0;
-		padding-top: 0;
-	}
-	.tablet-page{
-		width: 95%;
 		position: absolute;
 		padding-left: 15%;
-		padding-right: 10%;
+		padding-right: 15%;
+		z-index: -1;
+		margin-top: 2%;
+	}
+	.tablet{
+		width: 4%;
+		position: absolute;
+		margin-left: 53%;
+		margin-top: 20%;
 		z-index: 1;
 		display: inline;
 	}
 	.phone{
-		width: 26%;
+		width: 18%;
 		position: relative;
-		padding-left: 10%;
-		padding-top: 10%;
-		margin-left: 1%;
-		margin-top: 15%;
+		margin-left: 9%;
+		margin-top: 21.5%;
 		z-index: 1;
 		display: inline;
+	}
+	}
+	.pic{
+		width: 37%;
+		position: absolute;;
+		margin-left: 57%;
+		margin-top: 24%;
+		z-index: 2;
+		display: inline;
+		border-radius: 10px;
+	}
+
+	.message{
+		width: 12.5%;
+		position: absolute;
+		margin-top: 26.5%;
+		margin-left: 11.5%;
+	}
+	.desktop{
+		position: absolute;
+		width: 63%;
+		margin-left: 18.5%;
+		margin-top: 5%;
+		border-radius: 1%
+	}
+	.right{
+		position: absolute;
+		margin-left: 82%;
+		margin-top: 5%;
+		width: 15%;
+	}
+	.left{
+		position: absolute;
+		margin-left: 9%;
+		margin-top: 5%;
+		width: 15%;
+	}
+	/*phone*/
+	.contain {
+		width:46%;
+		margin: 0 auto;
+	    background: url("../img/phone-page.png");
+	    background-size: 500px 875px;
+	    background-repeat: no-repeat;
+	    height:1000px;
+}
+	.background{
+		background-color: #444;
+	}
+
+	.phone1 {
+		 width: 59%;
+		 z-index: 1;
+		 margin:0 auto;
+		 padding-top:155px;
+		 color: white;
+	}
+
+	.arrow2{
+		position: absolute;
+		margin-top: 25%;
+		width: 60px;
+		margin-left: -90%;
+		z-index: 30;
+	}
+}
+
+@media (max-width: 500px) {
+.navbar {
+		margin-bottom: 0;
+	}
+	/*main page*/
+
+	.monitor{
+		width: 100%;
+		position: absolute;
+		padding-left: 15%;
+		padding-right: 15%;
+		z-index: -1;
+		margin-top: 2%;
+	}
+	.tablet{
+		width: 4%;
+		position: absolute;
+		margin-left: 53%;
+		margin-top: 20%;
+		z-index: 1;
+		display: inline;
+	}
+	.phone{
+		width: 18%;
+		position: relative;
+		margin-left: 9%;
+		margin-top: 21.5%;
+		z-index: 1;
+		display: inline;
+	}
+	}
+	.pic{
+		width: 37%;
+		position: absolute;;
+		margin-left: 57%;
+		margin-top: 24%;
+		z-index: 2;
+		display: inline;
+		border-radius: 10px;
+	}
+
+	.message{
+		width: 12.5%;
+		position: absolute;
+		margin-top: 26.5%;
+		margin-left: 11.5%;
+	}
+	.desktop{
+		position: absolute;
+		width: 63%;
+		margin-left: 18.5%;
+		margin-top: 5%;
+		border-radius: 1%
+	}
+	.right{
+		position: absolute;
+		margin-left: 82%;
+		margin-top: 5%;
+		width: 15%;
+	}
+	.left{
+		position: absolute;
+		margin-left: 9%;
+		margin-top: 5%;
+		width: 15%;
+	}
+	/*phone*/
+	.contain {
+		width:100%;
+		margin: 0 auto;
+	    background: url("../img/phone-page.png");
+	    background-size: 375px 875px;
+	    background-repeat: no-repeat;
+	    height:1000px;
+}
+	.background{
+		background-color: #444;
+	}
+
+	.phone1 {
+		 width: 59%;
+		 z-index: 1;
+		 margin:0 auto;
+		 padding-top:155px;
+		 color: white;
+	}
+
+	.arrow2{
+		position: absolute;
+		margin-top: 25%;
+		width: 60px;
+		margin-left: -90%;
+		z-index: 30;
 	}
 }

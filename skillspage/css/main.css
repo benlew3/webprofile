@@ -390,6 +390,7 @@ header #logo-container #subtitle {
   color: #e85151;
   font-weight: bold;
   font-size: 18px;
+  text-decoration: underline;
 }
 header a {
   color: #e85151;
@@ -492,7 +493,7 @@ header nav ul li a.bordered {
   }
 }
 #content section.intro h1 {
-  font-size: 8em;
+  font-size: 3em;
   border-top: 2px solid #fff;
   letter-spacing: -0.05em;
   margin-top: 1.2em;
@@ -648,4 +649,3 @@ header nav ul li a.bordered {
   opacity: 1;
 }
 
-/*# sourceMappingURL=main.css.map */

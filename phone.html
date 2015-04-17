@@ -19,47 +19,41 @@
 
 </head>
 <body>
-<header>
-<a href="index.html"><img src="img/tablet/arrow.png" class="arrow2"></a>
-	<img src="img/phone-page.png" class="phone2">
-	<div id="contactwrap">
-		<div class="container">
-			<div class="row">
+  <a href="index.html"><img src="img/tablet/arrow.png" class="arrow2"></a>
+<div>
+	 <div class="contain">
+      <div class="phone1">
+          <div>
+            <p><font size="4.5"> DON'T BE SHY, GET IN TOUCH!</font></p>
+            <p>Call, Text, Email, Mail, Anyway works! <br>I look forward to working with you!</p>
+            <p>
+              <small>Tel. 415.497.2162<br>
+              Email. bennru33@Gmail.com<br></small>
+            </p>
+            <p>
+              <small>Address. 15 Elderberry Ct.<br>
+              Novato, Ca, 94945<br>
+              USA</small>
+            </p>
+          </div>
 
-				<div class="col-lg-6">
+        <div class="col-lg-8 boxes">
+          <form role="form" method="post" action="mail.php">
+            <div class="form-group">
+              <label for="name">Your Name</label><br>
+              <input required="" name="contactname" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter name"><br>
+              <label for="email">Email address</label><br>
+              <input required="" name="contactemail" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"><br>
+              <label for="message">Message</label><br>
+              <textarea required="" name="contactmessage" class="form-control" rows="3"></textarea><br>
+            </div>
+            <button name="submit" type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-					<p><font size="4.5"> DON'T BE SHY, GET IN TOUCH!</font></p>
-					<p>Call, Text, Email, Mail, Anyway works! <br>I look forward to working with you!</p>
-					<p>
-						<small>Tel. 415.497.2162<br/>
-						Email. bennru322Gmail.com<br/></small>
-					</p>
-					<p>
-						<small>Address. 15 Elderberry Ct.<br/>
-						Novato, Ca, 94945<br/>
-						USA</small>
-					</p>
-
-				</div>
 </div>
-				<div class="col-lg-4 boxes">
-					<form role="form" method="post" action="mail.php">
-					  <div class="form-group">
-					    <label for="name">Your Name</label>
-					    <input required name="contactname" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
-					    <label for="email">Email address</label>
-					    <input required name="contactemail" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-					    <label for="message">Message</label>
-					    <textarea required name ="contactmessage" class="form-control" rows="3"></textarea>
-					  </div>
-					  <button name="submit" type="submit" class="btn btn-default">Submit</button>
-					</form>
-
-				</div>
-			
-			</div>	
-
-</header>
 
 <script src="./js/jquery-2.1.1.min.js"></script>
 <script src="./js/bootstrap/js/bootstrap.min.js"></script>
